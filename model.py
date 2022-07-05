@@ -6,7 +6,7 @@ class Model(nn.Module):
     def __init__(self):
         super.__init__()
         #StyleEncoder
-        self.conv1_1 = self.conv_layers(1,64,5,1)
+        self.conv1_1 = self.conv_layers(10,64,5,1)
         self.conv1_2 = self.conv_layers(64,128,3,2)
         self.conv1_3 = self.conv_layers(128,256,3,2)
         self.conv1_4 = self.conv_layers(256,512,3,2)
@@ -15,7 +15,7 @@ class Model(nn.Module):
         self.conv1_7 = self.conv_layers(512,512,3,2)
         self.conv1_8 = self.conv_layers(512,512,3,2)
         #ContentEncoder
-        self.conv2_1 = self.conv_layers(1,64,5,1)
+        self.conv2_1 = self.conv_layers(10,64,5,1)
         self.conv2_2 = self.conv_layers(64,128,3,2)
         self.conv2_3 = self.conv_layers(128,256,3,2)
         self.conv2_4 = self.conv_layers(256,512,3,2)
